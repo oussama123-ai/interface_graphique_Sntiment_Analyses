@@ -1,0 +1,71 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <!-- En-tête de la page : type du document, encodage, titre de la page,,styles etc.-->
+    <!-- données spécifiques au référencement de la page ainsi que l'encodage utilisé -->
+    <title> Sentiment Analyses With Bert  </title><meta charset="UTF-8"> 
+    <!-- lien vers page css (utilisation de bootstrap )-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>    
+  <div class="login-form" style="width: 400px;">            
+      <!--definir la methode-->
+            <form action="" method="post">
+                <!-- title-->
+                <h2 class="text-center">Sentiment Analyses</h2>      
+                <div class="form-group">
+                    <button style="border-radius: 10px;background-color: blue;width: 350px;height: 40px ; margin-top: 10px;">
+                        <a href="{{ url_for('result') }}"class="active" style="color: black;">Preduction File </a>
+                      </button>
+                </div>  
+            </form>
+          
+        </div>
+              <!-- partie de style utiliser dans notre page web-->
+        <style>
+            /*construire le cadre de login */
+            .login-form {
+                width: 340px;
+                margin: 50px auto;
+            }
+            /*pour definir le coleur de background de cadre de connexion */
+            .login-form form {
+                margin-bottom: 15px;
+                background: #f7f7f7;
+                box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+                padding: 30px;
+            }
+            /*determiner position de titre h2*/
+            .login-form h2 {
+                margin: 0 0 15px;
+            }
+            /*determiner le position et le bordure pour les inputs et le bouton*/
+            .form-control, .btn {
+                min-height: 38px;
+                border-radius: 2px;
+            }
+            /*caracteriser le taille de bouton*/
+            .btn {        
+                font-size: 15px;
+                font-weight: bold;
+            }
+            .form-group button {
+                border-radius: 15px;
+            }
+        </style>
+
+
+<div class="login-form" style="width: 400px;">            
+                
+              <div class="form-group">
+                    <a href="{{ url_for('index') }}"class="active">Home</a>
+    
+              </div>  
+        <h5 class="text-center">
+            <div class="copy">
+                <p>&copy; Created by Othamni Oussama</p>
+            </div>
+        </h5>    
+      </div>
+</body>
+</html>
